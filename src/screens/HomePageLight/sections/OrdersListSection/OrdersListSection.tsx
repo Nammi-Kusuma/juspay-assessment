@@ -1,4 +1,4 @@
-import React from "react";
+// React import not required with the current JSX runtime; keep file free of unused imports.
 
 const orders = [
   {
@@ -103,11 +103,21 @@ export const OrdersListSection = (): JSX.Element => {
         </div>
 
         <div className="flex items-center justify-end gap-2 px-6 py-4">
+          {/* Previous page button */}
+          <button aria-label="Previous page" className="w-7 h-7 inline-flex items-center justify-center rounded-lg border border-[#1c1c1c1a] dark:border-[#ffffff1a] text-[#1c1c1c66] dark:text-[#9ca3af]">
+            <span className="text-sm leading-none">‹</span>
+          </button>
+
           <button className="w-7 h-7 inline-flex items-center justify-center rounded-lg border border-[#1c1c1c1a] dark:border-[#ffffff1a] text-[#1c1c1c66] dark:text-[#9ca3af]">1</button>
           <button className="w-7 h-7 inline-flex items-center justify-center rounded-lg text-[#1c1c1c66] dark:text-[#9ca3af]">2</button>
           <button className="w-7 h-7 inline-flex items-center justify-center rounded-lg text-[#1c1c1c66] dark:text-[#9ca3af]">3</button>
           <button className="w-7 h-7 inline-flex items-center justify-center rounded-lg text-[#1c1c1c66] dark:text-[#9ca3af]">4</button>
           <button className="w-7 h-7 inline-flex items-center justify-center rounded-lg text-[#1c1c1c66] dark:text-[#9ca3af]">5</button>
+
+          {/* Next page button */}
+          <button aria-label="Next page" className="w-7 h-7 inline-flex items-center justify-center rounded-lg border border-[#1c1c1c1a] dark:border-[#ffffff1a] text-[#1c1c1c66] dark:text-[#9ca3af]">
+            <span className="text-sm leading-none">›</span>
+          </button>
         </div>
       </div>
     </div>
