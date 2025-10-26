@@ -1,0 +1,1 @@
+export { HomePageLight } from "./HomePageLight";
